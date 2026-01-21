@@ -1,8 +1,15 @@
-import React from 'react'
 import Navigation from '../Componetns/Navigation'
+import { useNavigate } from 'react-router-dom'
 import "../Pages-Css/HeroPage.css"
 
+
 function HeroPage() {
+
+  const navigate = useNavigate();
+const handleCreateWorkspace  = ()=>{
+    navigate("/create-workspace")
+}
+
   return (
     <div>
         <Navigation />
@@ -13,7 +20,7 @@ function HeroPage() {
             <p>The all-in-one workspace designed for agile teams. Streamline workflows, automate reporting, and ship faster—without the chaos.</p>
             
             <div className="hero-buttons">
-                <button className="btn-primary" onClick={()=>alert("Currenty Unavailable Try Orcas On later")}>Get Started for Free</button>
+                <button className="btn-primary" onClick={handleCreateWorkspace}>Get Started for Free</button>
             </div>
 
         </div>

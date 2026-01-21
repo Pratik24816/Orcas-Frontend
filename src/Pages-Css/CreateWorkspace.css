@@ -1,0 +1,138 @@
+.workspace {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Main diagonal gradient */
+  background: linear-gradient(135deg, #cfefff 50%, #dff5ea 50%);
+  
+  position: relative;
+  overflow: hidden;
+}
+
+.workspace-container-card {
+    box-sizing: border-box;
+    width: 30%;
+    min-width: 320px;
+    max-width: 420px;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.9);
+    padding: 35px;
+    border-radius: 22px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(8px);
+
+    z-index: 10;
+}
+
+.workspace-head {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+   
+}
+
+.workspace-head h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.workspace-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.workspace-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.workspace-form button {
+   display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.btn-primary {
+    background-color: #008060;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #008060;
+    box-shadow: 0 4px 6px -1px rgba(0, 128, 96, 0.2);
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #006e52;
+    transform: translateY(-1px);
+}
+
+.workspace-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+.workspace-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-group i {
+    color: #666;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.helper {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+.logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
