@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HeroPage />} />
         <Route path="/create-workspace" element={<CreateWorkspace />} />
-        <Route path="/team-lead-dashboard" element={<TeamLeadDashboard />} />
+        <Route path="/team-lead-dashboard/:workspaceId" element={<TeamLeadDashboard />} />
       </Routes>
     </>
   )
